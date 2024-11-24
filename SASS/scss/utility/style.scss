@@ -1,0 +1,98 @@
+*{
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: aliceblue;
+}
+
+body{
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    & li{
+        margin: 0px 50px;
+        list-style: none;
+    }
+}
+
+.containerNotes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.notesClass{
+    border: 2px solid aliceblue;
+    margin: 5px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+        & img{
+            width: 250px;
+            object-fit: fill;
+        }
+}
+
+.form label{
+    display: flex;
+    justify-content: center;
+    font-size:large;
+    font-weight: 400;
+}
+
+.form input{
+    width: 20vw;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    color: #240b36;
+    font-weight: 400;
+
+    resize: none;
+    overflow: hidden;
+}
+
+.form #text{
+    min-width: 47vw;
+    min-height: 20vh;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #240b36;
+    font-weight: 300;
+
+    resize: none;
+    overflow: hidden;
+}
+
+.btnSave{
+    border-radius: 20%;
+    border: 1px solid whitesmoke;
+    background-color: #812929;
+}
+
+footer{
+    font-size: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p a{
+        text-decoration: none;
+    }
+}
