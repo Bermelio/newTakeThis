@@ -23,31 +23,27 @@
         
         <h2>Mis notas:</h2>
         <div class="options">
-            <li id="newNote"><button class="newNote">New</button></li>
+            <li id="newNote"><button id="triggerModal" class="newNote">New</button></li>
         </div>
-        <!-- trying modal -->
-        <!-- mala practica con los div o simplemente no me gusta-->
+        <!-- modal -->
         <div class="modalContainer" id="modalContainer">
-            <button class="btnClose" id="btnClose">X</button>
+            <!-- modal contentenido -->
+            <span class="close">&times;</span>
             <h3>Nueva nota epica</h3>
-            <!-- form -->
             <form class="form">
                 <label for="title">Título:</label>
                 <input type="text" id="title" name="title" placeholder="Ingresa el título">
                 <label for="text">Texto:</label>
                 <textarea id="text" name="text" placeholder="Escribe el texto aquí..."></textarea>
-                
                 <button class="btnSave" id="btnSave" type="submit">Save</button>
             </form>
-        </div>
-        <div class="containerNotes" id="containerNotes">
-
         </div>
     </main>
     <footer>
         <p>todos los derechos reservados al ladron de:<a href="mailto:"> facundoperalta258@gmail.com</a></p>
     </footer>
 
-    <script src="js/newScript.js" defer></script>
+    <script src="js/modalScript.js" defer></script>
+    <!-- <script src="js/script.js" defer></script> -->
 </body>
 </html>
