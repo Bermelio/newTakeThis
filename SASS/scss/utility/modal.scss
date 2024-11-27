@@ -1,5 +1,4 @@
 //tryng modal
-
 // .modalContainer{
 //     text-align: center;
 //     width: 50vw;
@@ -9,19 +8,15 @@
 //     background: #c31432;
 //     background: -webkit-linear-gradient(to left, #240b36, #c31432);
 //     background: linear-gradient(to left, #000000, #45c3e2);
-
 //     position: fixed;
 //     left: 20vw;
-
 //     visibility: hidden;
 //     opacity: 0;
 // }
-
 // .modalToggle{
 //     visibility: visible;
 //     opacity: 1;
 // }
-
 // .btnClose{
 //     background-color: #240b36;
 //     border-radius: 25px;
@@ -29,7 +24,6 @@
 //     top: 10px;
 //     right: 10px;
 // }
-
 //testing new modal, more clean
 
 .modal {
@@ -51,15 +45,18 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
 }
 
-.close{
-    color: #aaaaaa;
+.close {
+    color: #aaa;
     float: right;
-    font: 200;
+    font-size: 28px;
     font-weight: bold;
-}
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
 .close{
     &:hover,
@@ -69,4 +66,3 @@
         cursor: pointer;
     }
 }
-

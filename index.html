@@ -16,31 +16,35 @@
     <title>Notepad</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="titleMain">
         <h1>[ Take this ]</h1>
     </nav>
     <main>
         
-        <h2>Mis notas:</h2>
+        <h2>My notes:</h2>
         <div class="options">
-            <li id="newNote"><button id="triggerModal" class="newNote">New</button></li>
+            <button id="triggerModal" class="newNote">New</button>
         </div>
         <!-- modal -->
-        <div class="modalContainer" id="modalContainer">
+        <div class="modal" id="modal">
             <!-- modal contentenido -->
-            <span class="close">&times;</span>
-            <h3>Nueva nota epica</h3>
-            <form class="form">
-                <label for="title">Título:</label>
-                <input type="text" id="title" name="title" placeholder="Ingresa el título">
-                <label for="text">Texto:</label>
-                <textarea id="text" name="text" placeholder="Escribe el texto aquí..."></textarea>
-                <button class="btnSave" id="btnSave" type="submit">Save</button>
-            </form>
+            <div class="modal-content">
+                <div class="box2">
+                    <span class="close">&times;</span>
+                    <form class="form">
+                        <input type="text" id="title" name="title" placeholder="Ingresa el título">
+                        <textarea id="text" name="text" placeholder="Escribe el texto aquí..."></textarea>
+                        <button class="btnSave" id="btnSave" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
+
+
+    <!-- footer -->
     <footer>
-        <p>todos los derechos reservados al ladron de:<a href="mailto:"> facundoperalta258@gmail.com</a></p>
+        <p>Todos los derechos reservados al ladron de:<a href="mailto:"> facundoperalta258@gmail.com</a></p>
     </footer>
 
     <script src="js/modalScript.js" defer></script>
