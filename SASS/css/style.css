@@ -25,6 +25,7 @@ body {
 }
 
 .notesClass {
+  position: relative;
   border: 2px solid aliceblue;
   margin: 5px;
   border-radius: 10px;
@@ -136,6 +137,13 @@ footer p a {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.delete {
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

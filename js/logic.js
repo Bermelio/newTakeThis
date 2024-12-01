@@ -34,10 +34,11 @@ function renderNotes() {
         const div = document.createElement('div');
         div.classList.add('notesClass');
         div.innerHTML = `
+            <span class="delete" id"delete">&times;</span>
+            <img src="${note.img}">
             <h3>${note.title} n°${note.id}</h3>
             <p>${note.content}</p>
             <br>
-            <img src="${note.img}">
         `;
         containerNotes.appendChild(div);
     });
