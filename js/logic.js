@@ -70,14 +70,11 @@ function randomImg(collectionImg) {
 // inicializamos
 
 fetchNotes().then((data) => {
-    // Asignar las notas cargadas a arrayNotes
     arrayNotes = data;
-  
-    // Asignar imágenes aleatorias si es necesario
     arrayNotes.forEach((note) => {
       note.img = randomImg(collectionImg);
     });
-  
-    // Renderizar las notas
     renderNotes();
 });
+
+//esto deberia llamarse tarjeta o algo por el estilo

@@ -103,3 +103,9 @@ const arrayNotes = [
      title.value = '';
      content.value = '';
  });
+
+ // ========== new note ============= 
+
+ function newNote () {
+    
+ }
